@@ -2,7 +2,7 @@ import sqlite3
 
 conn = sqlite3.connect('mytest.db')
 cursor = conn.cursor()
-print "Let's input some students!"
+print ("Let's input some students!")
 while True:
 	name = raw_input('Student\'s name: ')
 	username = raw_input('Student\'s username: ')
@@ -17,4 +17,4 @@ while True:
 	if cont[0].lower() == 'n':
 		break	
 cursor.close()
-print "All done. Bye now"
+print ("All done. Bye now")
