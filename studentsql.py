@@ -17,3 +17,4 @@ while True:
 	if cont[0].lower() == 'n':
 		break	
 cursor.close()
+print "All done. Bye now"
