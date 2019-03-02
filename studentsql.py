@@ -5,7 +5,7 @@ cursor = conn.cursor()
 print "Let's input some students!"
 while True:
 	name = raw_input('Student\'s name: ')
-	username = raw_input(Student\'s username: ')
+	username = raw_input('Student\'s username: ')
 	id_num = raw_input('Student\'s id: ')
 	sql = ''' insert into students
 		(name, username, id)
