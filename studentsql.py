@@ -2,18 +2,21 @@
 import sqlite3
 
 # Function to create a database
-def createdb:
+def createdb():
 	fconn = sqlite3.connect('student.db')
 	cursor = fconn.cursor()
 	sql = '''create table students (
 		name text,
 		username text,
 		id int)'''
-	cursor.execute(sql)
-	cursor.close()
+	try:
+		cursor.execute(sql)
+		cursor.close()
+	except:
+		pass
 	
 createdb()
-conn = sqlite3.connect('students.db')
+conn = sqlite3.connect('student.db')
 cursor = conn.cursor()
 print ("Let's input some students!")
 while True:
